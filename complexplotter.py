@@ -34,6 +34,7 @@ def multicolored_lines():
     lc = colorline(x, y, z=z, cmap='hsv', norm=plt.Normalize(0.0, z.max()))
     cbar = plt.colorbar(lc)
     cbar.set_label('$x$', rotation=0)
+    
     xlim = max(abs(x.min()), abs(x.max()))
     ylim = max(abs(y.min()), abs(y.max()))
 
